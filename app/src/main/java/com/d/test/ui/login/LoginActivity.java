@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -58,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         Toast.makeText(this, "aaa", Toast.LENGTH_SHORT).show();
+        Log.d("TAG", "onCreate: ");
         loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
             @Override
             public void onChanged(@Nullable LoginResult loginResult) {
