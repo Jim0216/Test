@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
+        Toast.makeText(this, "aaa", Toast.LENGTH_SHORT).show();
         loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
             @Override
             public void onChanged(@Nullable LoginResult loginResult) {
