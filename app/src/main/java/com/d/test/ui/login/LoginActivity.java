@@ -58,8 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        Toast.makeText(this, "aaa", Toast.LENGTH_SHORT).show();
-        Log.d("TAG", "onCreate: ");
+
         loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
             @Override
             public void onChanged(@Nullable LoginResult loginResult) {
